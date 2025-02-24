@@ -7,6 +7,14 @@ header {
     background-color: #120323;
     color: #97bf04;
 }
+header img {
+    max-width:150px;
+}
+figure {
+    display:flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
 figure img{
     outline: 0.25rem solid #d9043d;
 }
@@ -22,25 +30,20 @@ footer {
     padding: 1rem;
     text-align: center;
 }
-body {
+body {  /* A sans-serif font */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 @media screen and (max-width: 768px){
     header { /*For small screens  */
+    display: block;
     text-align: center;
     padding: 2rem;
     }
-    figure img{
-        max-width: 300px;
-        max-height: 300px;
-    }
     figcaption h2{
-        padding-left: 2rem;
+        margin-top: 1rem;
     }
     figcaption p{
         padding-bottom: 1rem;
-        padding-left: 2rem;
         padding-right: 2rem;
     }
     aside {
@@ -52,8 +55,8 @@ body {
         padding-top: 0.5rem;
     }
 }
-@media screen and (min-width:768px) and (max-width: 999px){ /*Medium Screens*/
-    header{
+@media screen and (min-width:768px) { 
+    header{ /*Medium Screens*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -61,20 +64,23 @@ body {
         padding: 1rem;
     }
     main figure{
-        display: flex;
+        flex-direction: row;
         flex: auto;
         flex:1;
         gap:1rem;
     }      
     figure img{
-        width: 300px;
-        height:300px;
+        max-width:300px;
+        max-height:300px;
     }
     figure {
-        margin:3rem;
+        margin:2rem;
     }
     figcaption p {
         padding:1rem;
+    }
+    figcaption h2{
+        margin-left: 1rem;
     }
     aside {
         padding:1rem;
@@ -105,22 +111,27 @@ body {
     figcaption {
         margin-left: 1rem;
     }
+    figcaption h2{
+        margin-left: 1rem;
+    }
     figcaption p {
-        padding-bottom: 1rem;
+        flex:3;
     }
     figure img {
-        width: 33%;
-        height: 33%;
-        margin:0.5rem;
+        max-width:300px;
+        max-height:300px;
+        flex:1;
     }
     aside {
-        height: 100%;
+        margin-top: 2rem;
+        max-height: 100%;
+        width:85%;
         padding:1rem;
     }
     aside h3{
         padding-bottom: 0.5rem;
-    }
-    
-    }
+        flex:1;
+    }  
+}
 
     
