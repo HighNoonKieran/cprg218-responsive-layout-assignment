@@ -1,0 +1,126 @@
+* { /* True for the whole page */
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+header {
+    background-color: #120323;
+    color: #97bf04;
+}
+figure img{
+    outline: 0.25rem solid #d9043d;
+}
+figcaption h2{
+    color:#120323;
+}
+aside {
+    background-color: #97bf04;
+}
+footer {
+    background-color: #d9043d;
+    color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 768px){
+    header { /*For small screens  */
+    text-align: center;
+    padding: 2rem;
+    }
+    figure img{
+        max-width: 300px;
+        max-height: 300px;
+    }
+    figcaption h2{
+        padding-left: 2rem;
+    }
+    figcaption p{
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    aside {
+        padding:1rem;
+        margin-bottom: 1rem;
+    }
+    aside h3 {
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 999px){ /*Medium Screens*/
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    main figure{
+        display: flex;
+        flex: auto;
+        flex:1;
+        gap:1rem;
+    }      
+    figure img{
+        width: 300px;
+        height:300px;
+    }
+    figure {
+        margin:3rem;
+    }
+    figcaption p {
+        padding:1rem;
+    }
+    aside {
+        padding:1rem;
+        margin-bottom: 1rem;
+    }
+    aside h3 {
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+}
+@media screen and (min-width: 1000px){
+    header{ /*Large Screens*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    #container {
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    figure {
+        display: flex;
+        padding: 1rem;
+    }
+    figcaption {
+        margin-left: 1rem;
+    }
+    figcaption p {
+        padding-bottom: 1rem;
+    }
+    figure img {
+        width: 33%;
+        height: 33%;
+        margin:0.5rem;
+    }
+    aside {
+        height: 100%;
+        padding:1rem;
+    }
+    aside h3{
+        padding-bottom: 0.5rem;
+    }
+    
+    }
+
+    
