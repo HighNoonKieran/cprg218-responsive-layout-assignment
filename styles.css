@@ -43,16 +43,15 @@ body {  /* A sans-serif font */
         margin-top: 1rem;
     }
     figcaption p{
-        padding-bottom: 1rem;
-        padding-right: 2rem;
+        padding: 0 2rem 1rem 0;
     }
     aside {
         padding:1rem;
         margin-bottom: 1rem;
     }
     aside h3 {
-        padding-bottom: 0.5rem;
-        padding-top: 0.5rem;
+        padding: 0.5rem 0; 
+
     }
 }
 @media screen and (min-width:768px) { 
@@ -87,8 +86,7 @@ body {  /* A sans-serif font */
         margin-bottom: 1rem;
     }
     aside h3 {
-        padding-bottom: 0.5rem;
-        padding-top: 0.5rem;
+        padding: 0.5rem 0; 
     }
 }
 @media screen and (min-width: 1000px){
@@ -102,7 +100,6 @@ body {  /* A sans-serif font */
     #container {
         display: flex;
         margin-top: 2rem;
-        margin-bottom: 2rem;
     }
     figure {
         display: flex;
@@ -133,5 +130,6 @@ body {  /* A sans-serif font */
         flex:1;
     }  
 }
+
 
     
