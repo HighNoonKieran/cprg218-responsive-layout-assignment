@@ -5,4 +5,5 @@ Responsive web design means creating web pages that automatically adjust to diff
 
 ## The full instructions for this assignment can be found in Brightspace
 
-All work done by Kieran Bunse 2025
+All work done is original
+HTML and images provided by Dan Stephenson
